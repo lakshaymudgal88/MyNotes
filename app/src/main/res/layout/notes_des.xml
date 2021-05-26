@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp">
+
+    <TextView
+        android:id="@+id/note_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_margin="4dp"
+        android:text="@string/_25_05_10_03_am"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_time"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1ECEC"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="@string/important_note"
+                android:textColor="@color/teal_700"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/note_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note_title"
+                android:ellipsize="end"
+                android:maxLines="7"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="@string/this_is_a_note_desc"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

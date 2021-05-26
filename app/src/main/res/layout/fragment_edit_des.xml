@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EditDesFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/des_menu"
+        app:title="Edit Note"
+        app:titleTextColor="@color/white"
+        android:background="@color/teal_700"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_height="wrap_content"
+        android:hint="@string/title"
+        app:counterMaxLength="50"
+        android:layout_margin="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/teal_700"
+        app:counterEnabled="true"
+        app:hintTextColor="@color/teal_700"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:paddingHorizontal="5dp"
+            android:maxLines="5"
+            android:maxLength="50"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/teal_700"
+        app:counterEnabled="true"
+        android:hint="@string/make_note"
+        app:hintTextColor="@color/teal_700"
+        android:textColorHint="@color/black">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/desc_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="5dp"
+        android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

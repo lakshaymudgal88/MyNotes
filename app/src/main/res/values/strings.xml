@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title">title</string>
+    <string name="make_note">make note</string>
+    <string name="let_s_create_our_daily_notes">Let\'s create our daily notes</string>
+    <string name="sign_in_with_google_to_start_creating_notes">Sign in with google to start creating notes</string>
+    <string name="image_view">image_view</string>
+    <string name="_25_05_10_03_am">25-05 10:03 am</string>
+    <string name="important_note">Important note</string>
+    <string name="this_is_a_note_desc">this is a note desc</string>
+</resources>

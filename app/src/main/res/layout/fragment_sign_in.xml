@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SignInFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelines_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="349dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelines_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="349dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/t_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/guidelines_1"
+        app:layout_constraintEnd_toStartOf="@id/guidelines_2"
+        android:gravity="center"
+        android:text="@string/let_s_create_our_daily_notes"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/t_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/t_1"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintStart_toStartOf="@id/guidelines_1"
+        app:layout_constraintEnd_toStartOf="@id/guidelines_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:text="@string/sign_in_with_google_to_start_creating_notes"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelines_1"
+        app:layout_constraintEnd_toStartOf="@id/guidelines_2"
+        app:layout_constraintTop_toBottomOf="@+id/t_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
